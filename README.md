@@ -1,6 +1,6 @@
 # ShowSpotter
     
-<https://joefitzpatrick.tech/ShowSpotter> \
+<http://joefitzpatrick.tech/ShowSpotter> \
 Version 1.0 \
 Original Deployment Date - February 16, 2018
     
