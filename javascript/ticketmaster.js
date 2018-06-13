@@ -28,7 +28,9 @@ if (localStorage.getItem("city")) {
  * @returns {array} allConcerts - array of objects containing concert information
  */
 var searchFun = function () {
-    event.preventDefault();
+    if(event){
+        event.preventDefault();
+    }
     if (spotify.length > 0) {
         allConcerts = [];
         userCity = String($("#city").val());
