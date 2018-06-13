@@ -8,7 +8,7 @@ var spotify = function () {
  */
 
     $("#login").on("click", function () {
-        window.location.replace("https://accounts.spotify.com/en/authorize?client_id=84dbfb40bf444d6bb409195e34dcd32d&response_type=token&scope=user-follow-read&redirect_uri=https://codisteinborn.github.io/ConcertApp/");
+        window.location.replace("https://accounts.spotify.com/en/authorize?client_id=672bb96812104349ad6f07e2302f932c&response_type=token&scope=user-follow-read%20user-follow-modify&redirect_uri=joefitzpatrick.tech/ShowSpotter/");
     });
 
     tokenURL = window.location.href;
@@ -264,7 +264,7 @@ var spotify = function () {
                 storedArtists.push(artist);
                 localStorage.setItem("selectedArtistArray", JSON.stringify(storedArtists));
             }
-            window.location.replace("https://accounts.spotify.com/en/authorize?client_id=84dbfb40bf444d6bb409195e34dcd32d&response_type=token&scope=user-follow-modify&redirect_uri=https://codisteinborn.github.io/ConcertApp/");
+            window.location.replace("https://accounts.spotify.com/en/authorize?client_id=672bb96812104349ad6f07e2302f932c&response_type=token&scope=user-follow-read%20user-follow-modify&redirect_uri=joefitzpatrick.tech/ShowSpotter/");
         }
     });
 
