@@ -8,7 +8,7 @@ var spotify = function () {
  */
 
     $("#login").on("click", function () {
-        window.location.replace("https://accounts.spotify.com/en/authorize?client_id=672bb96812104349ad6f07e2302f932c&response_type=token&scope=user-follow-read%20user-follow-modify&redirect_uri=joefitzpatrick.tech/ShowSpotter/");
+        window.location.replace("https://accounts.spotify.com/en/authorize?client_id=672bb96812104349ad6f07e2302f932c&response_type=token&scope=user-follow-read%20user-follow-modify&redirect_uri=http://joefitzpatrick.tech/ShowSpotter/");
     });
 
     tokenURL = window.location.href;
@@ -264,7 +264,7 @@ var spotify = function () {
                 storedArtists.push(artist);
                 localStorage.setItem("selectedArtistArray", JSON.stringify(storedArtists));
             }
-            window.location.replace("https://accounts.spotify.com/en/authorize?client_id=672bb96812104349ad6f07e2302f932c&response_type=token&scope=user-follow-read%20user-follow-modify&redirect_uri=joefitzpatrick.tech/ShowSpotter/");
+            window.location.replace("https://accounts.spotify.com/en/authorize?client_id=672bb96812104349ad6f07e2302f932c&response_type=token&scope=user-follow-read%20user-follow-modify&redirect_uri=http://joefitzpatrick.tech/ShowSpotter/");
         }
     });
 
